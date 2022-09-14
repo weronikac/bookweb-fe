@@ -327,7 +327,7 @@ export const PostView = (props: Props) => {
                         Dodaj do listy
                       </Button>
                     )}
-                    {token && found!.length === 1 &&(
+                    {token && found!.length !== 0 &&(
                       <Button
                         type='submit'
                         onClick={() => removefromList()}

@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "isolatedModules": false,
+      "paths": {
+        "@/*": ["./*"]
+      }
+    }
+  }
+  

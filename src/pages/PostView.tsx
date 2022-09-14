@@ -318,7 +318,7 @@ export const PostView = (props: Props) => {
                   <h3 className={styles.postTitle}>{post.title}</h3>
                   <p className={styles.minorInfo}>ISBN: {post.isbn}</p>
                   <Box className={styles.contentContainer2}>
-                  {token && found!.length === 0 &&(
+                  {token && found?.length === 0 &&(
                       <Button
                         type='submit'
                         onClick={() => addtoList()}
@@ -327,7 +327,7 @@ export const PostView = (props: Props) => {
                         Dodaj do listy
                       </Button>
                     )}
-                    {token && found!.length === 1 &&(
+                    {token && found?.length === 1 &&(
                       <Button
                         type='submit'
                         onClick={() => removefromList()}

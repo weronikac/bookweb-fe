@@ -8,10 +8,9 @@ export interface LoginResponseI {
 }
 
 export interface RegisterRequestI {
+  email: string;
   name: string;
   password: string;
-  email: string;
-  avatar?: string;
 }
 
 export interface RegisterResponseI {
@@ -26,7 +25,6 @@ export interface ChangeI {
   password: string;
   newpassword: string;
 }
-
 
 export interface ForgotI {
   email: string;

@@ -40,6 +40,13 @@ export const Register: React.FC = () => {
       email,
       password,
     };
+    try {
+      const { data } = await register(user);
+      history.push('/login');
+
+    } catch (error: any) {
+      
+    }
 
     try {
       history.push('/login');
